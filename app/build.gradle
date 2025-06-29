@@ -1,0 +1,86 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+
+}
+
+android {
+    namespace 'com.example.projectfinanzle'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.projectfinanzle"
+        minSdk 26 // ✅ ตั้งค่ากลับให้รองรับ Firebase
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+    implementation libs.androidx.legacy.support.v4
+    implementation libs.androidx.lifecycle.livedata.ktx
+    implementation libs.androidx.lifecycle.viewmodel.ktx
+    implementation libs.androidx.fragment.ktx
+    implementation libs.androidx.navigation.fragment.ktx
+    implementation libs.androidx.navigation.ui.ktx
+    implementation libs.androidx.navigation.fragment
+    implementation libs.androidx.media3.transformer
+    implementation libs.androidx.material3.android
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+    implementation("com.airbnb.android:lottie:3.4.0")
+
+// ✅ Firebase BOM (Bill of Materials) ใช้เพื่อจัดการเวอร์ชัน
+    implementation platform('com.google.firebase:firebase-bom:33.9.0')
+    implementation  'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+// ✅ Firebase dependencies (ไม่ต้องระบุเวอร์ชัน)
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+
+// ✅ Guava library
+    implementation 'com.google.guava:guava:30.1-jre'
+
+// ✅ Firebase Authentication (สำหรับการใช้ Firebase Authentication)
+    implementation 'com.google.firebase:firebase-auth:23.2.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.google.android.material:material:1.9.0'
+
+    implementation 'com.google.android.material:material:1.10.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+}
+apply plugin: 'com.google.gms.google-services'
+

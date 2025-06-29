@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="12dp"
+        android:background="@drawable/grawalletmodel">
+
+        <!-- Wallet Name TextView -->
+        <TextView
+            android:id="@+id/walletName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallet Name"
+            android:textColor="@color/white"
+            android:fontFamily="@font/kanitregular"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Wallet Balance TextView -->
+        <TextView
+            android:id="@+id/walletBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="฿ 0.00"
+            android:fontFamily="@font/kanitregular"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- ProgressBar (horizontal) -->
+        <ProgressBar
+            android:id="@+id/progressSaving"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/rounded_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/walletBalance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- TextView แสดงเปอร์เซ็นต์ -->
+        <TextView
+            android:id="@+id/progressPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/kanitregular"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/progressSaving"
+            app:layout_constraintTop_toTopOf="@+id/progressSaving"
+            app:layout_constraintBottom_toBottomOf="@+id/progressSaving"
+            android:layout_marginEnd="8dp"/>
+
+
+        <!-- Detail Button -->
+        <Button
+            android:id="@+id/detailBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button_white"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/kanitregular"
+            android:text="History"
+            android:textColor="#2E5077"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressSaving" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

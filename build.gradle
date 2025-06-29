@@ -1,0 +1,22 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+// buildscript ควรอยู่ด้านบนสุด
+buildscript {
+    ext.kotlin_version = "2.1.0" // เพิ่มหรืออัปเกรดเวอร์ชันเป็น 2.1.0
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.4.2'
+        // dependencies อื่นๆ
+    }
+}
+
+
+// Plugins ควรอยู่หลัง buildscript
+plugins {
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.kotlin.android) apply false
+
+}
+
+

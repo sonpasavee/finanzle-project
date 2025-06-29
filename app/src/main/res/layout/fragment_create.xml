@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgtest003"
+    tools:context=".Create.CreateFragment">
+
+    <!-- Title TextView for Create Pocket -->
+    <TextView
+        android:id="@+id/Create_PocketPN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/kanitregular"
+        android:text="Create Pocket"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- CardView for Available Balance -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAvailableBalance"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#FFFF"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- ImageView for Available Balance -->
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Balance Icon"
+                android:src="@drawable/qwqq" />
+
+            <!-- TextView for Available Balance -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/balanceTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanitregular"
+                    android:text="Available Balance"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanitregular"
+                    android:text="0.00"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Create New Pocket Section -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCreatePocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardAvailableBalance">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp"> <!-- จัดให้อยู่ตรงกลางแนวนอน -->
+
+            <!-- Create New Pocket Title -->
+            <TextView
+                android:id="@+id/TabName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/kanitregular"
+                android:text="Create New Pocket"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <!-- Wallet Name Input -->
+            <TextView
+                android:id="@+id/text_wallet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/kanitregular"
+                android:text="Wallet Name"
+                android:textColor="#000000"
+                android:textSize="18sp" /> <!-- จัดให้อยู่ชิดซ้าย -->
+
+            <EditText
+                android:id="@+id/nameWallet"
+                android:layout_width="350dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edittext_rounded"
+                android:fontFamily="@font/kanitregular"
+                android:hint="Wallet Name"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:textSize="16sp" />
+
+            <!-- Amount Section -->
+            <TextView
+                android:id="@+id/text_Amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/kanitregular"
+                android:text="Amount"
+                android:textColor="#000000"
+                android:textSize="18sp" /> <!-- จัดให้อยู่ชิดซ้าย -->
+
+            <EditText
+                android:id="@+id/balanceWallet"
+                android:layout_width="350dp"
+                android:layout_height="52dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edittext_rounded"
+                android:fontFamily="@font/kanitregular"
+                android:hint="Budget Wallet"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:textSize="16sp" />
+
+            <!-- Wallet Type Selection (Radio Group) -->
+            <RadioGroup
+                android:id="@+id/radioGroupWalletType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbExpense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:button="@drawable/custom_radio_button"
+                    android:checked="true"
+                    android:fontFamily="@font/kanitregular"
+                    android:text="Expense"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rbSaving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/custom_radio_button"
+                    android:fontFamily="@font/kanitregular"
+                    android:text="Saving"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+            <!-- Target Amount EditText (Visible only when required) -->
+            <EditText
+                android:id="@+id/targetAmountEditText"
+                android:layout_width="350dp"
+                android:layout_height="52dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittext_rounded"
+                android:fontFamily="@font/kanitregular"
+                android:hint="Enter Target Amount"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <!-- Create Pocket Button -->
+            <Button
+                android:id="@+id/addWalletBtn"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_button2"
+                android:fontFamily="@font/kanitregular"
+                android:text="Create Pocket"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

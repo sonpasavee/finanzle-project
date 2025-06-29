@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.projectfinanzle.Home.HomeFragment"
+        android:label="Home"
+        android:fontFamily="@font/kanitmedium"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.projectfinanzle.History.HistoryFragment"
+        android:label="History"
+        android:fontFamily="@font/kanitmedium"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_Create"
+        android:name="com.example.projectfinanzle.Create.CreateFragment"
+        android:label="Create"
+        android:fontFamily="@font/kanitmedium"
+        tools:layout="@layout/fragment_create" />
+
+    <fragment
+        android:id="@+id/navigation_Transfer"
+        android:name="com.example.projectfinanzle.Transfer.TransferFragment"
+        android:label="Transfer"
+        android:fontFamily="@font/kanitmedium"
+        tools:layout="@layout/fragment_transfer" />
+
+    <fragment
+        android:id="@+id/navigation_Profile"
+        android:name="com.example.projectfinanzle.Profile.ProfileFragment"
+        android:label="Profile"
+        android:fontFamily="@font/kanitmedium"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

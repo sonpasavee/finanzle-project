@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- สีเมื่อถูกเลือก (สีเขียว #79D7BE) -->
+    <item android:color="#FFFFFF" android:state_checked="true"/>
+    <!-- สีปกติ (สีขาว) -->
+    <item android:color="#cbd9de"/>
+</selector>

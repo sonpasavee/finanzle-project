@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="20dp"
+    android:viewportWidth="32"
+    android:viewportHeight="20"
+    android:tint="#FFFFFF">
+
+    <!-- ตัวสมุดบัญชี -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M3 4c0-1.1 0.9-2 2-2h22c1.1 0 2 0.9 2 2v12c0 1.1-0.9 2-2 2H5c-1.1 0-2-0.9-2-2V4zm2 0v12h22V4H5z"/>
+
+    <!-- เส้นข้อมูลในสมุด -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M7 6h18v2H7zM7 10h12v2H7z"/>
+</vector>
+
+
+
+

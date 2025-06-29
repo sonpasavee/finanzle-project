@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Theme หลักของแอป -->
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#2E5077</item>
+        <item name="colorPrimaryVariant">#1E3A5F</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+    </style>
+
+    <!-- Theme Overlay สำหรับ Toolbar -->
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:background">#2E5077</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@android:color/white</item> <!-- กำหนดให้ปุ่มกลับมีสีขาว -->
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="HintStyle" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:translationY">-4dp</item> <!-- ขยับขึ้น -->
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SpinnerTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+
+
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:fontFamily="@font/kanitregular"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/ic_history_icon"
+        android:fontFamily="@font/kanitregular"
+        android:title="Overview" />
+
+    <item
+        android:id="@+id/navigation_Create"
+        android:icon="@drawable/ic_baseline_add"
+        android:fontFamily="@font/kanitregular"
+        android:title="Create" />
+
+    <item
+        android:id="@+id/navigation_Transfer"
+        android:icon="@drawable/ic_transfer_icon"
+        android:fontFamily="@font/kanitregular"
+        android:title="Transfer" />
+
+    <item
+        android:id="@+id/navigation_Profile"
+        android:icon="@drawable/ic_profile_icon"
+        android:fontFamily="@font/kanitregular"
+        android:title="Profile" />
+</menu>

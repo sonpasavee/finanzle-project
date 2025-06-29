@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="30dp" /> <!-- ขนาดมุมโค้ง -->
+            <gradient
+                android:angle="80"
+                android:startColor="#20637b"
+                android:endColor="#197a9f"
+                android:type="linear"/>
+</shape>

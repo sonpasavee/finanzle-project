@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgtest006"
+    tools:context=".DetailWallet">
+
+
+    <ImageView
+        android:id="@+id/backtotransfer"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/arrowbackiconremovebg"
+        app:layout_constraintEnd_toStartOf="@+id/nameWalletDetail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/nameWalletDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="58dp"
+        android:fontFamily="@font/kanitregular"
+        android:text="TextView"
+        android:textColor="#F6EEEE"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ใช้รหัสสีแดง -->
+
+
+    <Button
+        android:id="@+id/deleteWalletBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/delete_wallet"
+        android:fontFamily="@font/kanitregular"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:text="Delete Wallet"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nameWalletDetail"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/balanceWalletDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/kanitregular"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameWalletDetail" />
+
+    <TextView
+        android:id="@+id/targetAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/kanitregular"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balanceWalletDetail" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/DetailRecyclerView"
+        android:layout_width="409dp"
+        android:layout_height="678dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/kanitregular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balanceWalletDetail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
